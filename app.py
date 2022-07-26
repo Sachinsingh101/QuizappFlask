@@ -6,11 +6,9 @@ Bootstrap(app)
 
 @app.route('/')
 def home():
-    return render_template("base.html")
-
-@app.route('/home')
-def home2():
     return render_template("home.html")
+
+
 
 @app.route('/html')
 def html():
