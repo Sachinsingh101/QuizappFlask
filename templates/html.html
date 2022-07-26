@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}
+Html Quiz 
+{% endblock %}
+{% block head %}
+<style>
+    p{font-family:Akshar;}
+</style>
+{% endblock %}
+{% block content %} <br>
+<div class="container" style="background:#D0D3D4;padding: 10px;border-radius:10px">
+    <div class="row" >
+        <div class="col-lg-5">
+            <img src="{{url_for('static',filename='images/html.jpg')}}" alt="" class="card-img-top" style="height:510px;">
+        </div>
+        <div class="col-lg-6">
+            <div class="card-body">
+                <div class="card-title h3">
+                    HTML QUIZ TEST
+                </div>
+                <div class="card-text ">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat omnis sit repellat reprehenderit quam! Itaque saepe asperiores est quis officiis obcaecati ad voluptates. At, in atque tenetur sit culpa eveniet?
+                    Exercitationem neque reprehenderit enim, sint officiis, quidem temporibus fugiat magni, itaque iusto perferendis. Neque iusto voluptatem rem provident voluptates maxime dolor, asperiores quis ullam saepe quo ab laboriosam animi quae.
+                </div>
+                <div class="card-subtitle h4 text-muted">
+                    RULES
+                </div>
+                <div class="card-text">
+                    <p>1. Each Game consist of 10 Questions</p>
+                    <p>2. You can play Each Game Multiple time </p>
+                    <p>3. The knowledge level is form basic to advance with increasing level</p>
+                </div>
+                <div class="card-subtitle h4 text-muted">
+                    Who Can Play?
+                </div>
+                <div class="card-text">
+                    <p>1. Those Who have basic knowledge of HTML Programming Language</p>
+                    <p>2. Those Who Wants to Learn HTML </p>
+                    <p>3. Those Who wants to Start Learning Web Development Basics</p>
+                    
+                </div>
+
+                <a href="/htmlgame" class="btn btn-danger col-12">LET'S PLAY</a>
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}

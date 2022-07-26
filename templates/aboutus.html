@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}
+About Quizra 
+{% endblock %}
+{% block head %}
+<style>
+    @media screen and (max-width:1100px) {
+        .row{flex-direction: column;}
+        img{width:100%;}
+        
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="container pt-5">
+    <div class="row  te#ff6803t-white p-4" style="border-radius:10px;background: #6C757D;align-items: center;">
+        <div class="col-xl-5">
+             <h1 class="text-center" style="font-family:Alegreya Sans SC;color:#000000;">Welcome To The World of QuiZra</h1>
+             <p class=" p-3" style="font-family: Akaya Kanadaka;font-size: 150%;text-align: center;color:#161618;">Quizra is all about to bringing new Revolution in the 
+                the world of coding.<br>
+                Now on Quizra larning coding is easier than ever.
+                just play the Quiz games on Quizra and learn the basics of
+                any programming language during the play.
+                Its all about fun and learn baby
+                let gets started!
+             </p>
+        </div>
+        <img src="{{url_for('static',filename='images/about.jpg')}}" class="col-lg-7" alt="">
+
+    </div>
+</div>
+{% endblock %}

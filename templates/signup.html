@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}
+SignUp Quizra 
+{% endblock %}
+{% block head %}
+<style>
+    @keyframes moveform {
+        0%{transform: translateX(-110px);width:50%;}
+        100%{transform: translateX(0px);width:100%;}
+        
+    }
+    .formcontainer{animation-name: moveform;animation-duration: 3s;animation-iteration-count: 1;animation-timing-function:ease;animation-delay:0s;}
+    @media screen and (max-width:800px) {
+        img{display:none;}
+        
+    } 
+</style>
+{% endblock %}
+{% block content %}
+<br><br>
+<div class="container ">
+    <div class="row justify-content-around text-center" >
+        <div class="col-sm-12 col-md-8">
+            <div class="row" style="background:#6C757D;border-radius: 20px;">
+                <img src="{{url_for('static',filename='images/show.png')}}" alt="" class="col-md-5 col-sm-6 col-lg-6 pt-5 ps-2">
+                <div class="col-md-12 col-lg-6 col-sm-6 p-5 text-white" style="border-radius:10px;background: #6C757D;">
+                    <div class="formcontainer">
+                        <h3 class="pt-5">SignUp</h3>
+                        <form action="" class="p-3 ">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required>
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter Your Password for Quizra" required><br>
+                            <span> <button type="submit" class="btn btn-success">Submit</button> </span >
+                            <span><button type="reset" class="btn btn-danger ">Reset</button></span>
+                        </form>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}

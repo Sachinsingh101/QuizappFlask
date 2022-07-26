@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+{% block title %}
+HOme Quizra
+{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static',filename='home.css')}}">
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container-sm bg-secondary moveitem">
+  <div class="row">
+      <img class="col-5 pt-3 main" src="{{url_for('static',filename='images/main.png')}}" alt="">
+      <div class="col-5 pt-5 text-center">
+          <h1 class="display-2">Quizra</h1>
+          <h2 class="pt-3 move1">Unlimited Quiz Games</h2>
+          <h2 class="pt-3 move2">Easy To Play</h2>
+          <h2 class="pt-3 move3">100% Free Access</h2>
+      </div>
+
+  </div>
+</div>
+<br><br>
+ <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+          <ul class="list-group list-group" id="quiz-list">
+            <li class="list-group-item  display-6 courselist"><a href="" class="list-link">Trending Quiz Games</a></li>
+            <li class="list-group-item "><a href="" class="list-link">Python Quiz</a></li>
+            <li class="list-group-item"><a href="">Javascript Quiz</a></li>
+            <li class="list-group-item"><a href="">Java Quiz</a></li>
+            <li class="list-group-item"><a href="">C++ Quiz</a></li>
+            <li class="list-group-item"><a href="">C Quiz</a></li>
+            <li class="list-group-item"><a href="">Php Quiz</a></li>
+            <li class="list-group-item"><a href="">Html Quizz</a></li>
+            <li class="list-group-item"><a href="">Css Quiz</a></li>
+            
+
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div class="row course-row">
+            <div class="col-6 ">
+              <div class="card  course2">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    PYTHON
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 ">
+              <div class="card  course3">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    JavaScript
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row course-row">
+            <div class="col-6 ">
+              <div class="card  course4">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    Java
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 ">
+              <div class="card  course5">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    C++
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row course-row">
+            <div class="col-6 ">
+              <div class="card  course6">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    C
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 ">
+              <div class="card  course7">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    PhP
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row course-row">
+            <div class="col-6 ">
+              <div class="card  course8">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    HTML
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 ">
+              <div class="card  course9">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    CSS
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row course-row">
+            <div class="col-6 ">
+              <div class="card  course10">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    PYTHON
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card  course11">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    PYTHON
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row course-row">
+            <div class="col-6 ">
+              <div class="card  course12">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    PYTHON
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 ">
+              <div class="card  course13">
+                <div class="card-body">
+                  <div class="card-title h3">
+                    PYTHON
+                  </div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus enim sequi, ipsum dolor maxime similique nihil pariatur deserunt. Magni sequi animi excepturi blanditiis iste dolores ipsum aliquid nisi error.
+                  </div>
+                  <button class="btn btn-primary">PLAY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>  
+  </div>
+  <!-- ***********************page loadaer********************* -->
+  
+{% endblock %}

@@ -1,0 +1,28 @@
+@media screen and (max-width:800px) {
+    .course-row{flex-direction: column;}
+    .col-6{width:99vw;margin-top: 25px;}
+   
+}
+@media screen and (max-width:400px) {
+    .main{width:58vw;text-align: left;}
+   
+}
+
+.course2{background:#330099;color:white;text-align: center;}
+.course3{background:#239B56;color:white;text-align: center;}
+.course4{background:#da00ee;color:white;text-align: center;}
+.course5{background:#330033;color:white;text-align: center;}
+.course6{background:#1E88E5;color:white;text-align: center;}
+.course7{background:#E74C3C;color:white;text-align: center;}
+.course8{background:#D35400;color:white;text-align: center;}
+.course9{background:#FFAE52;color:white;text-align: center;}
+.course10{background:#00ffc8;color:white;text-align: center;}
+.course11{background:#f30049;color:white;text-align: center;}
+.course12{background:#8fcc00;color:white;text-align: center;}
+.course13{background:#f72803;color:white;text-align: center;}
+.course{background:#FF5E00;color:white;text-align: center;}
+.card-title{font-weight: bo;}
+
+.courselist{background:#330099;}
+.card:hover{transform:scale(1.1);cursor: pointer;transition-duration:0.7s;z-index: 99;background: rgb(152, 153, 158);color:black;}
+
