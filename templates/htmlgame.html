@@ -1,17 +1,51 @@
-{%  extends "base.html" %}
+{% extends "base.html "%}
 {% block title %}
-HTML Game Quizra 
+Let's Start Quiz 
 {% endblock %}
 {% block head %}
+
 <style>
+    .options{border: 1px solid #ffffff;margin-top: 20px;padding:5px;}
+    .row{justify-content: center;}
+    .qbank{background:rgb(126, 125, 129);padding:30px;border-radius: 30px;color:white;}
+    .btnnext{margin-left:55%;margin-top:-65px;}
+    .know{margin-top: 20px;margin-left: 25%;}
+    .options:hover{transform: scale(1.05);cursor:pointer;transition-duration: 0.5s;background:rgb(95, 94, 97);}   
+    
+    @media screen and (max-width:420px) {
+        .know{margin-left:0%;}
+        .btnnext{margin-left: 65%;}
+
+        
+    }
+    @media screen and (max-width:600px) {
+        .know{margin-left:10%;}
+        .btnnext{margin-left: 65%;}
+
+        
+    }
 </style>
 {% endblock %}
+
 {% block content %}
-<div class="container-sm">
+
+<div class="container pt-5">
     <div class="row">
-        <div class="col">
-            
+        <div class="col-lg-6 col-md-8 col-11 qbank">
+            <h2 id="question">HTML stands for ?</h2>
+            <div class="optionsbank">
+                <div class="options op-1">Hypertet  markup language</div>
+                <div class="options op-2">Hypertet  markup language</div>
+                <div class="options op-3">Hypertet  markup language</div>
+                <div class="options op-4">Hypertet  markup language</div>
+            </div>
+            <span class="know btn btn-success">Know the answer</span>
+            <span class="btn btn-success btnnext btn-danger">Next</span>
         </div>
     </div>
 </div>
+<!-- <script>
+    document.querySelector("h2").innerText="hello";
+</script> -->
+<script src="{{url_for('static',filename='qbank.js')}}"></script>
 {% endblock %}
